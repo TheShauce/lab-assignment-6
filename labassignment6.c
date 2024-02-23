@@ -3,21 +3,22 @@
 int search(int numbers[], int low, int high, int value) {
 
 while (low <= high) {
-        int mid = low + (high - low) / 2; // To prevent overflow
+        int mid = low + (high - low) / 2; 
 
-        // Check if value is present at mid
+       
         if (numbers[mid] == value)
             return mid;
 
-        // If value greater, ignore left half
+        
         if (numbers[mid] < value)
             low = mid + 1;
 
-        // If value is smaller, ignore right half
+        
         else
             high = mid - 1;
 	}
-	return -1;
+	
+return -1;
 }
 
 void printArray(int numbers[], int sz)
