@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int search(int numbers[], int low, int high, int value) {
+int search(int numbers[], int low, int high, int value) 
+{
 
 if (low > high)
 {
@@ -14,7 +15,8 @@ if (value < numbers[middle])
 }
 else if (value > numbers[middle])
 {
-return search(numbers, middle + 1, high value); }
+return search(numbers, middle + 1, high value); 
+}
 else return middle;
 }
 
