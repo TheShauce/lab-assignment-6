@@ -9,7 +9,7 @@ int search(int numbers[], int low, int high, int value)
 {
 	return -1;
 }
-	int mid = (low + high)/2;
+	int mid = low + (high - low)/2;
 	if (value < numbers[mid])
 {
 		return search(numbers, low, mid - 1, value);
