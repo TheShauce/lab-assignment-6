@@ -5,20 +5,20 @@
 int search(int numbers[], int low, int high, int value) 
 {
 
-if (low > high)
+	if (low > high)
 {
 	return -1;
 }
-int middle = (low + high)/2;
-if (value < numbers[middle])
+	int middle = (low + high)/2;
+	if (value < numbers[middle])
 {
-	return search(numbers, low, middle-1, value);
+		return search(numbers, low, middle-1, value);
 }
-else if (value > numbers[middle])
+	else if (value > numbers[middle])
 {
-return search(numbers, middle + 1, high value); 
+		return search(numbers, middle + 1, high, value); 
 }
-else return middle;
+	else return middle;
 }
 
 void printArray(int numbers[], int sz)
